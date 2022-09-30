@@ -11,7 +11,7 @@ const MiddleBanner = () => {
             </Title>
             <Description>
                 <ul>
-                    <li> <h4>Background & Audience </h4> <p>Tourism and Events Queensland wanted to increase consideration of the Whitsundays amongst social fun seekers; digitally savvy consumers
+                    <li> <h4 id='background'>Background & Audience </h4> <p>Tourism and Events Queensland wanted to increase consideration of the Whitsundays amongst social fun seekers; digitally savvy consumers
                         that socialise substantially online.</p> </li>
                     <li> <h4>Problem</h4> <p>The Whitsundays is losing its cachet as an isnpirational holiday location.</p> </li>
                     <li> <h4>Objective</h4> <p>Shift perceptions and re-build the Whitsunday's social currency as a world-class destination.</p> </li>
