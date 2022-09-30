@@ -3,6 +3,7 @@ import Navbar from "./Components/navbar";
 import Banner from "./Components/banner";
 import MiddleBanner from "./Components/middle-banner";
 import BottomBanner from "./Components/bottom-banner";
+import Footer from "./Components/footer";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <MiddleBanner />
       <BottomBanner />
+      <Footer />
     </div>
   );
 }
