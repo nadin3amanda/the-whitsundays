@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import banner from '../Images/Boat.png';
 
-
 const Banner = () => {
     return(
         <BannerContainer>
@@ -11,6 +10,12 @@ const Banner = () => {
             <h1>WHITSUNDAYS</h1>
             <h4>a movie that's waiting to be written</h4>
             </Title>
+            <Character1>
+                <img src={require('../Images/jake.png')} alt='character1' />
+            </Character1>
+            <Character2>
+                <img src={require('../Images/mysterywoman.png')} alt='character2' />
+            </Character2>
         </BannerContainer>
     );
 }
@@ -58,4 +63,14 @@ const Title = styled.div`
             font-weight: 300;
             letter-spacing: 1.5;
         }
+`;
+
+const Character1 = styled.div`
+    margin: 80px 0px 0px 550px;
+    position: absolute;
+`;
+
+const Character2 = styled.div`
+    margin: 50px 0px 0px 750px;
+    position: absolute;
 `;
