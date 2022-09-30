@@ -7,10 +7,10 @@ const Navbar = () => {
 
             <img src={require('../Images/icons8-video-24.png')} width='30' height='30' alt='play-video-icon' />
                 <ul>
-                    <li> Background & Challenge </li>
-                    <li> Solution </li>
-                    <li> Results & Effectiveness </li>
-                    <li> Slideshow </li>
+                    <li><a href='#background'> Background & Challenge </a></li>
+                    <li> <a href='#solution'>Solution </a></li>
+                    <li> <a href='/'>Results & Effectiveness </a></li>
+                    <li> <a href='/'>Slideshow </a></li>
                 </ul>
                 <DownloadButton><a href='/'> Download Board </a></DownloadButton>
         </NavContainer>
@@ -39,6 +39,12 @@ const NavContainer = styled.div`
     li {
         list-style-type: none;
         padding: 0px 20px 0px 20px;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
 `;
 
