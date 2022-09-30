@@ -4,17 +4,27 @@ import styled from "styled-components";
 const BottomBanner = () => {
     return (
         <BottomBannerContainer>
-            {/* <Title>
-                    <h1>solution </h1>
-            </Title>
             <Description>
-                <ul>
-                    <li> <h4>Background & Audience </h4> <p>Tourism and Events Queensland wanted to increase consideration of the Whitsundays amongst social fun seekers; digitally savvy consumers
-                        that socialise substantially online.</p> </li>
-                    <li> <h4>Problem</h4> <p>The Whitsundays is losing its cachet as an isnpirational holiday location.</p> </li>
-                    <li> <h4>Objective</h4> <p>Shift perceptions and re-build the Whitsunday's social currency as a world-class destination.</p> </li>
-                </ul>
-            </Description> */}
+            <Title>
+                    <h1 id='solution'>solution </h1>
+            </Title>
+                <Part1>
+                <p> We knew movies rated high on the list of our latest target's interest and, with incredible beaches, seaplanes, yachts and glamorous locations, the Whitsundays is the perfect setting for a movie.
+                    So we invited Australians to write it: </p>
+
+                    <h4>The Whitsundays.
+                    A movie that's awaiting to be written.</h4>
+
+                    <p> We enlisted the world-renowned screenwriter Craig Pearce a Script Supervisor. Then for 20 days, we posted a daily storyboard image on Faceboook and Instagram, inviting the public to write scenes for a chanceto win a $10,000 luxury holiday.</p>
+                </Part1>
+                <Part2>
+                    <p>The campaign launched with a trailer, radio, and online advertising. We reacted to the storyline as it developed, selecting, and treating images according to the previous winning scene.</p>
+
+                    <p>Each scene written and share and became a compelling "ad" for the WhitSundays.</p>
+
+                    <p>Together, Hollywood screen writer and the Australian public had created the worlds first crowd sourced movie storyboard in the store universe with millions of possible permutations.</p>
+                </Part2>
+            </Description>
         </BottomBannerContainer>
     );
 }
@@ -24,65 +34,64 @@ export default BottomBanner;
 const BottomBannerContainer = styled.div`
         display: flex;
         width: 100%;
-        height: 800px;
-        background: rgba(33,82,106,0.5);
+        height: 600px;
+        /* background: rgba(33,82,106,0.5); */
+        background-color: pink;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        justify-content: center;
+
 `;
 
-// const Title = styled.div`
-//         width: 450px;
-//         height: 200px;
-//         color: white;
-//         margin: 300px 0px 170px 80px;
-//         font-weight: 300;
+const Title = styled.div`
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        color: white;
+        margin: -200px 0px 0px 100px;
+        font-weight: 300;
+        position: absolute;
 
-//         h1 {
-//             font-size: 60px;
-//             text-transform: uppercase;
-//             letter-spacing: 2px;
-//             margin-top: -30px;
-//             font-weight: 400;
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            text-transform: Capitalize;
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin: 0 auto;
             
-//         }
+        }
 
-//         h3 {
-//             font-size: 28px;
-//             margin-left: 60px;
-//             text-transform: uppercase;
-//             letter-spacing: 5px;
-//             font-weight: 400;
-//         }
+`;
 
-//         h4 {
-//             font-size: 22px;
-//             text-transform: uppercase;
-//             margin: -50px 0px 0px 8px;
-//             font-weight: 400;
-//             letter-spacing: 1.5;
-//         }
-// `;
+const Description = styled.div`
+        display: flex;
+        width: 100%;
+        height: 300px;
+        color: white;
+        margin: 200px 400px 0px 300px;
+        align-items: center;
+        justify-content:center;
+        z-index: 10;
+        position: absolute;
+        vertical-align: middle;
+        
+`;
 
-// const Description = styled.div`
-//         width: 400px;
-//         color: white;
-//         margin: 200px 0px 0px 250px;
+const Part1 = styled.div`
+    width: 350px;
+    height: 150px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px 0px 20px;
+    
+`;
+const Part2 = styled.div`
+    width: 350px;
+    height: 150px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px 0px 20px;
+    
 
-//         h4 {
-//             font-size: 32px;
-//             width 200px;
-//             font-weight: 400;
-//         }
-//         p {
-//             margin-top: -30px;
-//             font-size: 12px;
-//             width: 380px;
-//         }
-//         ul {
-//             display: flex;
-//             flex-direction: column;
-//             }
-
-//         li {
-//             list-style-type: none;
-//             padding: 0px 20px 0px 20px;
-//         }
-// `;
+`;
