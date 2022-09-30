@@ -1,20 +1,36 @@
 import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
+import YoutubeEmbed from "./youtube-embed";
+
 
 const Footer = () => {
+
+    const [currentTab, setCurrentTab] = useState("first");
+
+    const handleSelect = (eventKey) => {
+        setCurrentTab("second");
+    };
+
     return (
-        <FooterContainer>
+        <FooterContainer
+        defaultActiveKey="first"
+        activeKey={currentTab}
+        onSelect={(key) => setCurrentTab(key)}
+        onClick={handleSelect}
+        >
                 <ul>
-                    <li><a href='/'> Video </a></li>
-                    <li> <a href='/'> Photography </a></li>
-                    <li> <a href='/'> Social </a></li>
-                    <li> <a href='/'> PR </a></li>
-                    <li> <a href='/'> Radio </a></li>
+                    <li eventKey='1'><a href='#video'> Video </a></li>
+                    <li eventKey='2'> <a href='#photography'> Photography </a></li>
+                    <li eventKey='3'> <a href='#social'> Social </a></li>
+                    <li eventKey='4'> <a href='#PR'> PR </a></li>
+                    <li eventKey='5'> <a href='#radio'> Radio </a></li>
                 </ul>
 
-                <VideoContainer>
-                    <></>
+                <VideoContainer id='video'>
+                    <YoutubeEmbed />
                 </VideoContainer>
+                
                 <p>Live reads from NOVA presenters reflected the ever-evolving story of Jake in real-time, and encouraged people to get involved to shape the story themselves.</p>
                 <ViewButton><a href='/'> View Project </a></ViewButton>
         </FooterContainer>
@@ -58,6 +74,10 @@ const FooterContainer = styled.div`
             color: white;
             }
 
+        a:active {
+            background: rgba(33,82,100,1);
+        }
+
          :hover {
             background: #164456;
             border-radius: 6px;
@@ -67,12 +87,8 @@ const FooterContainer = styled.div`
 `;
 
 const VideoContainer = styled.div`
-        background: black;
-        border-radius: 8px;
-        width: 250px;
-        height: 150px;
         position: absolute;
-        margin: 200px 0px 0px -400px;
+        margin: 150px 0px 0px -400px;
 `;
 
 const ViewButton = styled.button`
@@ -96,3 +112,4 @@ const ViewButton = styled.button`
         color: white;
     }
 `;
+

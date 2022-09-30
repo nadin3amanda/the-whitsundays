@@ -35,8 +35,7 @@ const BottomBannerContainer = styled.div`
         display: flex;
         width: 100%;
         height: 600px;
-        /* background: rgba(33,82,106,0.5); */
-        background-color: pink;
+        background: rgba(33,82,106,0.5);
         font-family: 'Roboto', sans-serif;
         align-items: center;
         justify-content: center;
